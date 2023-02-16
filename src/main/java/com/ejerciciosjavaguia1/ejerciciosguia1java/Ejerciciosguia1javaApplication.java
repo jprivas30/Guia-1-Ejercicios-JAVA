@@ -161,13 +161,12 @@ public static void numImpares(int num1, int num2, int contador) {
 //----------------------------Ejercicio 18 -------------------------------------
 //---------------------------Funcion Ejercicio 18 ------------------------------
 
-/*private static void numerosUsuario(int inicio,int termino, int ciclo){
+public static void numerosUsuario(int inicio,int termino, int ciclo){
 	System.out.println("Los numeros de "+ ciclo + " en " + ciclo + " entre el "+ inicio + " y el "+ termino + " son:" );
 	for (int i = inicio; i <= termino ; i+=ciclo){
 		System.out.println(i);
 	  }
 }
-*/
 
 
 	public static void main(String[] args){
@@ -334,20 +333,23 @@ numParImpar(numEva);*/
 
 //numeros100a1();
 
+
 //----------------------------Ejercicio 15 -------------------------------------
 //Escriba un programa que imprima todos los números pares entre 0 y 100
 
 //numPares();
+
 
 //----------------------------Ejercicio 16 -------------------------------------
 //Escriba un programa que imprima la suma de los 100 primeros números naturales
 
 //numerosSuma();
 
+
 //----------------------------Ejercicio 17 -------------------------------------
 //Escriba un programa que imprima los números impares entre dos extremos dados por el usuario y que además indique cuántos son
 
-System.out.println("Elige dos numeros para conocer los numeros impares entre ellos: ");
+/*System.out.println("Elige dos numeros para conocer los numeros impares entre ellos: ");
 Scanner teclado = new Scanner(System.in);
 System.out.print("Ingresa primer numero: ");
 int primerNumero= teclado.nextInt();
@@ -356,7 +358,8 @@ int segundoNumero= teclado.nextInt();
 teclado.close();
 int contadorImpares=0;
 
-numImpares(primerNumero,segundoNumero,contadorImpares);
+numImpares(primerNumero,segundoNumero,contadorImpares);*/
+
 
 //----------------------------Ejercicio 18 -------------------------------------
 //Escriba un programa que imprima todos los números naturales entre dos extremos dados por el usuario, con un salto también  indicado por el usuario
