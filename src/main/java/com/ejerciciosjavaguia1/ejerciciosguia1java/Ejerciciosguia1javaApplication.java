@@ -147,25 +147,27 @@ public static void numerosSuma() {
 //----------------------------Ejercicio 17 -------------------------------------
 //---------------------------Funcion Ejercicio 17 ------------------------------
 
-public static void numImpares(int num1, int num2) {
-	System.out.print("Los numeros impares entre el "+ num1+ " y el "+ num2+ " son:" );
+public static void numImpares(int num1, int num2, int contador) {
+	System.out.print("Los numeros impares entre el "+ num1+ " y el "+ num2+ " son: " );
 	for (int i = num1; i <= num2 ; i++){
 	  if (i%2==1){
 		System.out.println(i);
+		contador++;
 	  }
 	}
+	System.out.println("La cantidad de impares son: " + contador);
 }
 
 //----------------------------Ejercicio 18 -------------------------------------
 //---------------------------Funcion Ejercicio 18 ------------------------------
 
-private static void numerosUsuario(int inicio,int termino, int ciclo){
+/*private static void numerosUsuario(int inicio,int termino, int ciclo){
 	System.out.println("Los numeros de "+ ciclo + " en " + ciclo + " entre el "+ inicio + " y el "+ termino + " son:" );
 	for (int i = inicio; i <= termino ; i+=ciclo){
 		System.out.println(i);
 	  }
 }
-
+*/
 
 
 	public static void main(String[] args){
@@ -330,7 +332,7 @@ numParImpar(numEva);*/
 //----------------------------Ejercicio 14 -------------------------------------
 //Escriba un programa que imprima los números del 100 al 1 de dos en dos
 
-numeros100a1();
+//numeros100a1();
 
 //----------------------------Ejercicio 15 -------------------------------------
 //Escriba un programa que imprima todos los números pares entre 0 y 100
@@ -345,15 +347,16 @@ numeros100a1();
 //----------------------------Ejercicio 17 -------------------------------------
 //Escriba un programa que imprima los números impares entre dos extremos dados por el usuario y que además indique cuántos son
 
-/*System.out.println("Elige dos numeros para conocer los numeros impares entre ellos: ");
+System.out.println("Elige dos numeros para conocer los numeros impares entre ellos: ");
 Scanner teclado = new Scanner(System.in);
 System.out.print("Ingresa primer numero: ");
 int primerNumero= teclado.nextInt();
 System.out.print("Ingresa segundo numero: ");
 int segundoNumero= teclado.nextInt();
 teclado.close();
+int contadorImpares=0;
 
-numImpares(primerNumero,segundoNumero);*/
+numImpares(primerNumero,segundoNumero,contadorImpares);
 
 //----------------------------Ejercicio 18 -------------------------------------
 //Escriba un programa que imprima todos los números naturales entre dos extremos dados por el usuario, con un salto también  indicado por el usuario
