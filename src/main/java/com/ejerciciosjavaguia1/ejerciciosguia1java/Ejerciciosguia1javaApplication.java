@@ -86,8 +86,87 @@ public static void valorLLamada(float min, float seg, float valor){
 
 }
 
-//----------------------------Ejercicio 9 -------------------------------------
-//---------------------------Funcion Ejercicio 9 ------------------------------
+//----------------------------Ejercicio 12 -------------------------------------
+//---------------------------Funcion Ejercicio 12 ------------------------------
+
+public static void evaluarNumero(int num) {
+	if(num< 0){
+	System.out.print("El numero "+ num + " es negativo");
+	}else{
+	System.out.print("El numero "+ num + " es positivo");
+	}
+}
+
+//----------------------------Ejercicio 13 -------------------------------------
+//---------------------------Funcion Ejercicio 13 ------------------------------
+
+  public static void numParImpar(int numero) {
+	if(numero%2 == 0){
+		System.out.print("El numero "+ numero + " es par");
+	} else if(numero%2 == 1){
+		System.out.print("El numero "+ numero + " es impar");
+	} else{
+	}
+}
+
+//----------------------------Ejercicio 14 -------------------------------------
+//---------------------------Funcion Ejercicio 14 ------------------------------
+
+public static void numeros100a1() {
+	System.out.println("Los numeros del 100 al 1 con un decremento de 2 en 2 son: " );
+	for (int i = 100; i >= 1 ; i-=2){
+		System.out.println(i);
+	}
+}
+
+//----------------------------Ejercicio 15 -------------------------------------
+//---------------------------Funcion Ejercicio 15 ------------------------------
+
+public static void numPares() {
+	System.out.println("Los numeros pares entre el 1 y el 100 son: " );
+	for (int i = 0; i <= 100 ; i++){
+		if (i%2==0){
+		  System.out.println(i);
+		}
+	}
+}
+
+//----------------------------Ejercicio 16 -------------------------------------
+//---------------------------Funcion Ejercicio 16 ------------------------------
+
+public static void numerosSuma() {
+	int numero= 0;
+	int suma=0 ;
+	while(numero<=100){ 
+		suma+= numero;
+		numero++;		
+  }
+  	System.out.println("La suma de los numeros naturales del 1 al 100 es igual a: "+ suma);
+}
+
+//----------------------------Ejercicio 17 -------------------------------------
+//---------------------------Funcion Ejercicio 17 ------------------------------
+
+public static void numImpares(int num1, int num2) {
+	System.out.print("Los numeros impares entre el "+ num1+ " y el "+ num2+ " son:" );
+	for (int i = num1; i <= num2 ; i++){
+	  if (i%2==1){
+		System.out.println(i);
+	  }
+	}
+}
+
+//----------------------------Ejercicio 18 -------------------------------------
+//---------------------------Funcion Ejercicio 18 ------------------------------
+
+private static void numerosUsuario(int inicio,int termino, int ciclo){
+	System.out.println("Los numeros de "+ ciclo + " en " + ciclo + " entre el "+ inicio + " y el "+ termino + " son:" );
+	for (int i = inicio; i <= termino ; i+=ciclo){
+		System.out.println(i);
+	  }
+}
+
+
 
 	public static void main(String[] args){
 
@@ -223,8 +302,78 @@ teclado.close();
 valorLLamada( minutos, segundos, valorMinuto);*/
 
 
-//----------------------------Ejercicio 9 -------------------------------------
-//Escriba un algoritmo que permita para determinar cuánto pagará finalmente una persona por un artículo, considerando que tiene un descuento de 20%, y debe pagar 15% de IVA
+//----------------------------EJERCICIOS BUCLES/CONDICIONALES------------------------------------------
+
+
+//----------------------------Ejercicio 12 -------------------------------------
+//Escriba un programa que imprima en pantalla si un número dado por teclado es positivo, negativo o cero.
+
+/*Scanner teclado = new Scanner(System.in);
+System.out.print("Ingresa un numero para evaluar: ");
+int numero= teclado.nextInt();
+teclado.close();
+evaluarNumero(numero);*/
+
+
+//----------------------------Ejercicio 13 -------------------------------------
+//Escriba un programa que lea un número del teclado e imprima en pantalla si es par o impar.
+
+
+/*Scanner teclado = new Scanner(System.in);
+System.out.print("Ingresa un numero para evaluar si es par o impar: ");
+int numEva= teclado.nextInt();
+teclado.close();
+
+numParImpar(numEva);*/
+
+
+//----------------------------Ejercicio 14 -------------------------------------
+//Escriba un programa que imprima los números del 100 al 1 de dos en dos
+
+numeros100a1();
+
+//----------------------------Ejercicio 15 -------------------------------------
+//Escriba un programa que imprima todos los números pares entre 0 y 100
+
+//numPares();
+
+//----------------------------Ejercicio 16 -------------------------------------
+//Escriba un programa que imprima la suma de los 100 primeros números naturales
+
+//numerosSuma();
+
+//----------------------------Ejercicio 17 -------------------------------------
+//Escriba un programa que imprima los números impares entre dos extremos dados por el usuario y que además indique cuántos son
+
+/*System.out.println("Elige dos numeros para conocer los numeros impares entre ellos: ");
+Scanner teclado = new Scanner(System.in);
+System.out.print("Ingresa primer numero: ");
+int primerNumero= teclado.nextInt();
+System.out.print("Ingresa segundo numero: ");
+int segundoNumero= teclado.nextInt();
+teclado.close();
+
+numImpares(primerNumero,segundoNumero);*/
+
+//----------------------------Ejercicio 18 -------------------------------------
+//Escriba un programa que imprima todos los números naturales entre dos extremos dados por el usuario, con un salto también  indicado por el usuario
+
+/*System.out.println("Elige 2 extremos para mostrar numeros naturales ");
+Scanner teclado = new Scanner(System.in);
+System.out.print("Ingresa el numero de inicio: ");
+int numeroInicio= teclado.nextInt();
+System.out.print("Ingresa el numero final: ");
+int numeroTermino= teclado.nextInt();
+System.out.print("Ingresa cada cuantos numeros quieres que se muestren los numeros: ");
+int numeroSalto= teclado.nextInt();
+teclado.close();
+
+numerosUsuario(numeroInicio,numeroTermino, numeroSalto);*/
+
+
+//----------------------------Ejercicio 19 -------------------------------------
+//Escriba un programa que imprima los números del 1 al 100, que calcule la suma de todos los números pares y la suma de todos los impares
+
 
 
 
